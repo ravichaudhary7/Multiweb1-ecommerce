@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    background-color: rgb(158, 158, 158);
+}
+nav div img{
+    width: 10%;
+    padding-left:1rem;
+}
+#cent{
+    margin-right: 35rem;
+}
+nav #cent ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+#cent ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    display: block;
+    margin-left: 2rem;
+}
+#right a button{
+ border: none;
+ background-color: beige;
+ color: black;
+}
+#right {
+    margin-right: 2rem;
+}
+
+/* ===========cart======= */
+#cart{
+    background-color: rgb(148, 243, 160);
+    width: 25%;
+    height: 100Vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    padding: 1rem;
+    transition: 1s;
+    overflow-y: scroll;
+}
+#cart-header h2{
+    text-align: center;
+}
+#cart-header #x{
+   margin-left: 95%;
+}
+#cart-footer button{
+    width: 100%;
+    height: 3rem;
+    background-color: fuchsia;
+    border: none;
+    color: black;
+}
+
+.cart-body-design{
+display: grid;
+grid-template-columns: 30% 30% 30%;
+justify-content: space-between;
+}
+.p-img img{
+    width: 100%;
+}
+.p-details input{
+    width: 40%;
+}
+.p-subtotal{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+/* =========main========= */
+.cont{
+    
+    border-radius: 2px solid black;
+    background-color: darkgray;
+    color: white;
+    margin-top: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.cont img{
+    width: 100%;
+    height: 270px;
+}
+.cont h3, .cont h4, .cont h5, .cont p{
+    padding-left: 1rem;
+}
+.cont div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.cont button{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: rgb(225, 150, 150);
+    color: black;
+}
+.design{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-between;
+}
+
+/* =======Mobile version======= */
+@media (max-width:1100px) {
+    #cent{
+        margin-right: 10rem;
+    }
+    nav div img{
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    #cent{
+        margin-right: 0rem;
+    }
+}
+@media (max-width:400px) {
+    #right a{
+        margin-right: 0.5rem;
+    }
+}
